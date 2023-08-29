@@ -1,0 +1,13 @@
+<h2> Países </h2>
+<hr>
+
+<ul class="list-group">
+  <li
+    *ngFor="let page of menu"
+    [routerLink]="page.path"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{exact: true}"
+    class="list-group-item"
+  >
+    {{ page.label }}
+</ul>
