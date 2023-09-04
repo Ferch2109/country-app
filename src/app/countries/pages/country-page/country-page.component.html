@@ -34,7 +34,7 @@
       <div class="d-flex flex-wrap">
         <span *ngFor="let translation of translations" class="badge bg-primary m-1">
           <img class="translation-flag" [src]="translation.flag" [alt]="translation.name">
-          {{ country.translations[translation.code]?.common }}
+          {{ country.translations[translation.code].common }}
         </span>
       </div>
     </div>
